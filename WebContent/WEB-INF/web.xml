@@ -20,4 +20,12 @@
 		<servlet-name>servletOiMundo</servlet-name>
 		<url-pattern>/oi</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>AdicionaContato</servlet-name>
+		<servlet-class>br.com.caelum.agenda.servlet.AdicionaContatoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdicionaContato</servlet-name>
+		<url-pattern>/adicionaContato</url-pattern>
+	</servlet-mapping>
 </web-app>
