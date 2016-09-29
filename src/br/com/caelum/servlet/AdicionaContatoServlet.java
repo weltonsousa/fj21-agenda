@@ -2,6 +2,7 @@ package br.com.caelum.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -10,6 +11,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import br.com.caelum.jdbc.dao.ContatoDAO;
+import br.com.caelum.jdbc.modelo.Contato;
 
 @SuppressWarnings("serial")
 public class AdicionaContatoServlet extends HttpServlet {
@@ -45,7 +49,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		
 		 // salva o contato
 		 ContatoDAO dao = new ContatoDAO();
-		 dao.adiciona(contato);
+		 dao.Adiciona(contato);
 		
 		 // imprime o nome do contato que foi adicionado
 		 out.println("<html>");

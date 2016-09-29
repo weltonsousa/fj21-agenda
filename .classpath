@@ -18,6 +18,11 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/gracom/workspace-jee/apache-tomcat-9.0.0.M10/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gracom/workspace-jee/apache-tomcat-9.0.0.M10/lib/servlet-api.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/jdbc"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
