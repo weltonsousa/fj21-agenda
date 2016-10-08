@@ -23,14 +23,14 @@ public class AdicionaContatoServlet extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		
-		// pegando os parâmetros do request
+		//pegando os parâmetros do request
 		 String nome = request.getParameter("nome");
 		 String endereco = request.getParameter("endereco");
 		 String email = request.getParameter("email");
 		 String dataEmTexto = request.getParameter("dataNascimento");
 		 Calendar dataNascimento = null;
 		
-		 // fazendo a conversão da data
+		 //fazendo a conversão da data
 		 try {
 		 Date date = new SimpleDateFormat("dd/MM/yyyy").parse(dataEmTexto);
 		 dataNascimento = Calendar.getInstance();
@@ -40,7 +40,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		 return; //para a execução do método
 		 }
 		
-		 // monta um objeto contato
+		 //monta um objeto contato
 		 Contato contato = new Contato();
 		 contato.setNome(nome);
 		 contato.setEndereco(endereco);
@@ -51,7 +51,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		 ContatoDAO dao = new ContatoDAO();
 		 dao.Adiciona(contato);
 		
-		 // imprime o nome do contato que foi adicionado
+		 //imprime o nome do contato que foi adicionado
 		 out.println("<html>");
 		 out.println("<body>");
 		 out.println("Contato " + contato.getNome() + " adicionado com sucesso");
