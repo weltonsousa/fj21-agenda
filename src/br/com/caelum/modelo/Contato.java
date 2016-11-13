@@ -1,9 +1,9 @@
-package br.com.caelum.jdbc.modelo;
+package br.com.caelum.modelo;
 
 import java.util.Calendar;
 
 public class Contato {
-
+	
 	private Long id;
 	private String nome;
 	private String email;
@@ -41,5 +41,5 @@ public class Contato {
 		this.dataNascimento = dataNascimento;
 	}
 
-	
+		
 }
